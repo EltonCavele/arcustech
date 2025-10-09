@@ -8,7 +8,7 @@ export const ServicesSection = () => {
       </p>
 
       <div className="flex justify-center items-center w-full my-10 ">
-        <div className="grid grid-cols-3 gap-10 max-w-6xl ">
+        <div className="grid md:grid-cols-3 gap-10 max-w-6xl ">
           <Card
             title={"Predictive Analytics"}
             src={"/img/service1.svg"}
