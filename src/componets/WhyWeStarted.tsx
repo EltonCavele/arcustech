@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import Image from "next/image";
+import { Button } from "@heroui/react";
 
 // Conteúdo dos slides
 const slides = [
@@ -159,9 +160,7 @@ export function WhyWeStarted() {
       </div>
 
       <div className="text-center mt-12">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-full transition">
-          Learn More
-        </button>
+        <Button color="primary">Learn More</Button>
       </div>
     </section>
   );

@@ -1,4 +1,6 @@
 "use client";
+import { Faq } from "@/componets/Faq";
+import { Footer } from "@/componets/Footer";
 import { HeroComponent } from "@/componets/Hero";
 import { NavbarComponent } from "@/componets/NavBar";
 import { Partners } from "@/componets/Partners";
@@ -18,6 +20,8 @@ export default function Home() {
       <ServicesSection />
       <WhyChooseUs />
       <WhyWeStarted />
+      <Faq />
+      <Footer />
     </div>
   );
 }
