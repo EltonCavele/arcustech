@@ -1,4 +1,7 @@
 "use client";
+
+import { motion } from "framer-motion";
+
 const reasons = [
   {
     title: "Innovation",
@@ -24,24 +27,60 @@ const reasons = [
 
 export const WhyChooseUs = () => {
   return (
-    <section className="bg-black text-white py-20 px-6">
-      <h2 className="text-center text-3xl md:text-4xl font-bold mb-16">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={{
+        hidden: { opacity: 0, y: 48 },
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+        },
+      }}
+      className="bg-black py-20 px-6 text-white"
+    >
+      <motion.h2
+        variants={{
+          hidden: { opacity: 0, y: 32 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+          },
+        }}
+        className="mb-32 md:mb-16 text-center text-3xl font-bold md:text-4xl"
+      >
         Why Choose Us
-      </h2>
+      </motion.h2>
 
-      <div className="flex justify-center items-center w-full ">
-        <div className="flex flex-wrap justify-center ">
+      <div className="flex w-full items-center justify-center">
+        <div className="flex flex-wrap justify-center gap-10 md:gap-16">
           {reasons.map((item, index) => (
-            <div
-              key={index}
-              className={`w-72 h-72 bg-[#141414] border-10 p-10 border-black rounded-full flex flex-col items-center justify-center text-center -ml-10`}
+            <motion.div
+              key={item.title}
+              variants={{
+                hidden: { opacity: 0, scale: 0.85, y: 32 },
+                visible: {
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.55,
+                    delay: index * 0.1 + 0.2,
+                    ease: [0.22, 1, 0.36, 1],
+                  },
+                },
+              }}
+              className="flex h-72 w-72 flex-col items-center justify-center rounded-full border-10 border-black bg-[#141414] p-10 text-center max-sm:-mt-24 md:-ml-28"
             >
-              <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-              <p className="text-sm text-gray-300 px-4">{item.description}</p>
-            </div>
+              <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
+              <p className="px-4 text-sm text-gray-300">{item.description}</p>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };

@@ -45,7 +45,7 @@ export const Partners: React.FC<PartnersProps> = ({ speed = 30 }) => {
                 <Image
                   src={img.src}
                   alt={img.alt}
-                  className="h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
+                  className="h-10 md:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
                   loading="lazy"
                   width={200}
                   height={200}
@@ -55,7 +55,7 @@ export const Partners: React.FC<PartnersProps> = ({ speed = 30 }) => {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
+                className=" md:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
                 loading="lazy"
               />
             )}

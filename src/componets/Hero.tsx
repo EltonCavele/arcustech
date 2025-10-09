@@ -28,7 +28,7 @@ export const HeroComponent = () => {
     <motion.section
       initial="initial"
       animate="animate"
-      className="relative h-full min-h-[70vh] overflow-hidden bg-black text-white"
+      className="relative h-full min-h-[50vh] max-sm:mt-20  md:min-h-[70vh] overflow-hidden bg-black text-white"
     >
       <Image
         alt=""
@@ -75,7 +75,7 @@ export const HeroComponent = () => {
 
         <motion.div
           variants={textVariants}
-          className="flex w-full justify-center md:max-w-md md:justify-end lg:max-w-2xl"
+          className="hidden md:flex w-full  justify-center md:max-w-md md:justify-end lg:max-w-2xl"
         >
           <Image
             alt="grid hero robot area"
