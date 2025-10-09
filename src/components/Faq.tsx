@@ -58,8 +58,8 @@ export const Faq = () => {
 
       <motion.div
         layout
-        className="flex w-full max-w-4xl flex-col gap-6"
-        transition={{ layout: { duration: 0.45, ease: [0.4, 0, 0.2, 1] } }}
+        className="flex w-full max-w-4xl flex-col gap-6 max-sm:px-5"
+        transition={{ layout: { duration: 0.55, ease: [0.33, 1, 0.68, 1] } }}
       >
         {FAQS.map((item) => {
           const isOpen = activeId === item.id;
@@ -68,17 +68,17 @@ export const Faq = () => {
             <motion.article
               key={item.id}
               layout
-              className={`rounded-[2.5rem]  bg-[#080808] transition-colors duration-300 ${
+              className={`rounded-2xl bg-[#080808] transition-colors duration-500 ${
                 isOpen ? "bg-[#101010]" : ""
               }`}
               transition={{
-                layout: { duration: 0.5, ease: [0.4, 0, 0.2, 1] },
+                layout: { duration: 0.55, ease: [0.33, 1, 0.68, 1] },
               }}
             >
               <button
                 type="button"
                 onClick={() => handleToggle(item.id)}
-                className="flex w-full items-center gap-6 px-8 py-7 text-left"
+                className="flex w-full items-center gap-6 px-8 py-4 text-left"
                 aria-expanded={isOpen}
                 aria-controls={`faq-${item.id}`}
               >
@@ -92,7 +92,7 @@ export const Faq = () => {
 
                 <div className="flex-1">
                   <p
-                    className={`text-lg md:text-xl ${
+                    className={`text-md md:text-xl ${
                       isOpen ? "text-primary" : "text-white"
                     }`}
                   >
@@ -136,8 +136,8 @@ export const Faq = () => {
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{
-                      duration: 0.4,
-                      ease: [0.45, 0, 0.1, 1],
+                      duration: 0.45,
+                      ease: [0.33, 1, 0.68, 1],
                     }}
                     className="overflow-hidden px-8 pb-8 text-sm leading-7 text-white/70 md:pl-[7.5rem] md:text-base"
                   >

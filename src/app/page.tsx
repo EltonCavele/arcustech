@@ -1,27 +1,20 @@
 "use client";
-import { Faq } from "@/componets/Faq";
-import { Footer } from "@/componets/Footer";
-import { HeroComponent } from "@/componets/Hero";
-import { NavbarComponent } from "@/componets/NavBar";
-import { Partners } from "@/componets/Partners";
-import { ServicesSection } from "@/componets/ServicesSection";
-import { WhyChooseUs } from "@/componets/WhyChooseUs";
-import { WhyWeStarted } from "@/componets/WhyWeStarted";
-import { usePathname } from "next/navigation";
+import { Faq } from "@/components/Faq";
+import { HeroComponent } from "@/components/Hero";
+import { Partners } from "@/components/Partners";
+import { ServicesSection } from "@/components/ServicesSection";
+import { WhyChooseUs } from "@/components/WhyChooseUs";
+import { WhyWeStarted } from "@/components/WhyWeStarted";
 
 export default function Home() {
-  const pathname = usePathname();
-
   return (
-    <div className="!bg-black  h-full min-h-screen">
-      <NavbarComponent currentPath={pathname} brandName="ArcoTech" />
+    <div className="  h-full min-h-screen">
       <HeroComponent />
       <Partners />
       <ServicesSection />
       <WhyChooseUs />
       <WhyWeStarted />
       <Faq />
-      <Footer />
     </div>
   );
 }

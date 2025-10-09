@@ -100,7 +100,7 @@ export function NavbarComponent({
 
         <NavbarContent justify="end">
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="solid">
+            <Button as={Link} color="primary" href="/contact" variant="solid">
               Contact Us
             </Button>
           </NavbarItem>
