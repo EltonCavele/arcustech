@@ -48,7 +48,7 @@ export function NavbarComponent({
   links = centerLinks,
 }: NavbarComponentProps) {
   return (
-    <Navbar maxWidth="full" className={"bg-transparent "}>
+    <Navbar maxWidth="full" className={"bg-transparent"}>
       <div className="flex items-center w-full max-w-7xl px-10  mx-auto">
         <NavbarBrand className=" items-center gap-2 ">
           <Image
