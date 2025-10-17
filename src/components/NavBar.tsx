@@ -8,39 +8,16 @@ import {
   Link,
   Button,
 } from "@heroui/react";
+import Image from "next/image";
 
-// Logo desacoplado e reutilizável
-export const AcmeLogo: React.FC = () => {
-  return (
-    <svg
-      fill="none"
-      height="36"
-      viewBox="0 0 32 32"
-      width="36"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path
-        clipRule="evenodd"
-        d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-        fill="currentColor"
-        fillRule="evenodd"
-      />
-    </svg>
-  );
-};
-
-// Tipos dos itens de navegação
 type NavLinkItem = {
   label: string;
   href: string;
-
-  ariaCurrent?: "page" | undefined;
 };
 
 const centerLinks: NavLinkItem[] = [
   { label: "Home", href: "/" },
-  { label: "Services", href: "/services", ariaCurrent: "page" },
+  { label: "Services", href: "/services" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "About Us", href: "/about" },
 ];
@@ -72,16 +49,21 @@ export function NavbarComponent({
 }: NavbarComponentProps) {
   return (
     <Navbar maxWidth="full" className={"bg-transparent "}>
-      <div className="flex w-full max-w-7xl px-10  mx-auto">
-        <NavbarBrand className="text-blue-400">
-          <AcmeLogo />
-          <p className="ml-2 font-bold ">{brandName}</p>
+      <div className="flex items-center w-full max-w-7xl px-10  mx-auto">
+        <NavbarBrand className=" items-center gap-2 ">
+          <Image
+            alt="Logo"
+            src="/logo.png"
+            width={200}
+            height={200}
+            className="w-8 h-8"
+          />
+          <p className="font-bold text-white ">{brandName}</p>
         </NavbarBrand>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           {links.map((item) => {
-            const active =
-              isActive(item.href, currentPath) || item.ariaCurrent === "page";
+            const active = isActive(item.href, currentPath);
             return (
               <NavbarItem key={item.href} isActive={active}>
                 <Link

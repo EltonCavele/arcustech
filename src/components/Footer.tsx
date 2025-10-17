@@ -2,7 +2,7 @@
 
 import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import { ReactNode } from "react";
-import { AcmeLogo } from "./NavBar";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Home", href: "#" },
@@ -24,7 +24,7 @@ export const Footer = () => {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
-            <AcmeLogo />
+            <Image alt="Logo" src="/logo.png" width={200} height={200} />
             <p className="ml-2 font-bold ">ArcuTech</p>
           </div>
 

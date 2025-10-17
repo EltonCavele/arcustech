@@ -8,7 +8,7 @@ export const Provider = ({ children }: any) => {
   const pathname = usePathname();
   return (
     <div className="!bg-black">
-      <NavbarComponent currentPath={pathname} brandName="ArcoTech" />
+      <NavbarComponent currentPath={pathname} brandName="ArcusTech" />
       {children}
       <Footer />
     </div>
