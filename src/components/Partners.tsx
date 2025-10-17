@@ -18,12 +18,12 @@ export const Partners: React.FC<PartnersProps> = ({ speed = 30 }) => {
   const IMAGENS = [
     {
       id: "pex-1298",
-      src: "/img/slack.svg",
+      src: "/img/slack.png",
       alt: "Executivo estendendo a mão para aperto",
     },
     {
       id: "pex-1232",
-      src: "/img/spotify.svg",
+      src: "/img/dv-word.png",
       alt: "Profissionais sorrindo em aperto de mão",
     },
   ];
@@ -40,25 +40,12 @@ export const Partners: React.FC<PartnersProps> = ({ speed = 30 }) => {
       >
         {loopImages.map((img: any, idx) => (
           <div key={`${img.id}-${idx}`} className="flex-shrink-0">
-            {img.href ? (
-              <a href={img.href} target="_blank" rel="noopener noreferrer">
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  className="h-10 md:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
-                  loading="lazy"
-                  width={200}
-                  height={200}
-                />
-              </a>
-            ) : (
-              <img
-                src={img.src}
-                alt={img.alt}
-                className=" md:h-20 w-auto object-contain opacity-80 hover:opacity-100 transition"
-                loading="lazy"
-              />
-            )}
+            <img
+              src={img.src}
+              alt={img.alt}
+              className=" md:h-40 w-auto object-contain opacity-80 hover:opacity-100 transition"
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

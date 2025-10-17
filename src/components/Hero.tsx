@@ -49,9 +49,9 @@ export const HeroComponent = () => {
             variants={textVariants}
             className="text-4xl font-extrabold leading-24 sm:text-5xl md:text-6xl "
           >
-            Transforming Data into{" "}
+            Turning Ideas Into{" "}
             <span className="rounded-2xl bg-primary/90 px-3 py-1 text-black">
-              Decisions
+              Impact
             </span>
           </motion.h1>
 
@@ -59,16 +59,22 @@ export const HeroComponent = () => {
             variants={textVariants}
             className="mx-auto max-w-xl text-base font-light text-white/70 md:mx-0 md:text-lg"
           >
-            Leverage the power of machine learning and AI to unlock insights and
-            drive business growth.
+            Empowering Mozambique and beyond AI-driven software, Arcustech
+            transforms challenges into growth, resilience, and opportunity
           </motion.p>
 
           <motion.div
             variants={textVariants}
             className="flex justify-center md:justify-start"
           >
-            <Button color="primary" variant="solid" className="min-w-[11rem]">
-              Book a Meeting
+            <Button
+              as="a"
+              href="/contact"
+              color="primary"
+              variant="solid"
+              className="min-w-[11rem]"
+            >
+              Contact us
             </Button>
           </motion.div>
         </motion.div>

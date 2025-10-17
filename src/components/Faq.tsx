@@ -13,33 +13,33 @@ type FaqItem = {
 const FAQS: FaqItem[] = [
   {
     id: "01",
-    question: "What services does Catalyst Analytics provide?",
+    question: "What services do you provide across SaaS, web, and mobile?",
     answer:
-      "Catalyst Analytics offers a range of services including design, engineering, and project management. We specialize in user experience design, web development, mobile app development, custom software development, branding and identity, and more.",
+      "We design and deliver  SaaS platforms, high-performance web applications, and polished mobile apps that integrate seamlessly, surface real-time insights, and scale securely.",
   },
   {
     id: "02",
-    question: "Lorem Ipsum is simply dummy text of the printing",
+    question: "How do you approach projects to ensure measurable success?",
     answer:
-      "Yes. We use a proven discovery framework to align stakeholders, define measurable outcomes, and build roadmaps that keep delivery focused and efficient.",
+      "We use a collaborative discovery process to align goals, define KPIs, and ship iteratively with CI/CD, analytics, and clear roadmaps for predictable, data-driven outcomes.",
   },
   {
     id: "03",
-    question: "Lorem Ipsum is simply dummy text of the printing",
+    question: "What technologies and architectures do you typically use?",
     answer:
-      "Our teams combine domain expertise with modern data stacks, ensuring that we can plug into existing ecosystems or build a custom solution from the ground up.",
+      "We build API-first systems with modern stacks, cloud services, and secure architectures—optimized frontends, reliable backends, and integrations that fit existing ecosystems or greenfield builds.",
   },
   {
     id: "04",
-    question: "Lorem Ipsum is simply dummy text of the printing",
+    question: "How do you handle security, performance, and scalability?",
     answer:
-      "We provide end-to-end support — from data engineering and modeling to analytics dashboards and ongoing optimization — so insights stay actionable.",
+      "We prioritize code quality, observability, and robust security practices, delivering fast, accessible experiences with autoscaling, caching, and monitoring from day one.",
   },
   {
     id: "05",
-    question: "Lorem Ipsum is simply dummy text of the printing",
+    question: "Do you provide ongoing support after launch?",
     answer:
-      "We partner for the long term. Engagements include retrospectives and iteration cycles to continuously surface new opportunities for automation and growth.",
+      "Yes. We offer end-to-end support—maintenance, performance tuning, feature iteration, and roadmap updates—ensuring your SaaS, web, and mobile products continue to grow effectively.",
   },
 ];
 

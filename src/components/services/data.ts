@@ -6,6 +6,9 @@ import {
   BarChart3,
   ServerCog,
   LucideIcon,
+  Cloud,
+  Globe,
+  Smartphone,
 } from "lucide-react";
 
 export type Service = {
@@ -16,84 +19,48 @@ export type Service = {
   icon: LucideIcon;
 };
 
+// Services — trimmed to only our core offerings: SaaS, Web, and Mobile
 export const services: Service[] = [
   {
-    id: "ml",
-    title: "Machine Learning Solutions",
+    id: "saas",
+    title: "SaaS Platforms",
     description:
-      "Custom ML models designed and optimized for your specific business challenges, leveraging cutting-edge deep learning techniques.",
+      "Secure, cloud-native subscription software that streamlines operations, surfaces insights, and scales reliably.",
     points: [
-      "Deep learning model development",
-      "Neural network architecture design",
-      "Computer vision solutions",
-      "Natural language processing",
-      "Model optimization & scaling",
+      "User management, billing, and roles",
+      "Multi-tenant architecture and provisioning",
+      "Analytics dashboards and automation",
+      "API-first integrations with existing tools",
+      "Compliance, governance, and security",
     ],
-    icon: BrainCircuit,
+    icon: Cloud,
   },
   {
-    id: "blockchain",
-    title: "Blockchain Development",
+    id: "web",
+    title: "Web Development",
     description:
-      "End-to-end blockchain solutions from smart contract development to decentralized application architecture.",
+      "Fast, accessible, resilient web applications with robust backends, clean architectures, and CI/CD.",
     points: [
-      "Smart contract development",
-      "Blockchain integration",
-      "DeFi protocol design",
-      "Web3 development",
+      "Responsive UI and accessibility",
+      "API design and backend services",
+      "Performance optimization and caching",
+      "Testing, monitoring, and observability",
+      "SEO-friendly routing and metadata",
     ],
-    icon: Blocks,
+    icon: Globe,
   },
   {
-    id: "trading",
-    title: "Algorithmic Trading",
+    id: "mobile",
+    title: "Mobile Development",
     description:
-      "Advanced trading algorithms and systems leveraging ML for market analysis and automated execution.",
+      "High-performance native and cross-platform apps with intuitive UX and offline-first capabilities.",
     points: [
-      "Trading strategy development",
-      "High-frequency trading systems",
-      "Market analysis algorithms",
-      "Performance optimization",
+      "iOS and Android (native or cross-platform)",
+      "Offline sync and local caching",
+      "Push notifications and deep linking",
+      "Performance and battery optimization",
+      "App store deployment and maintenance",
     ],
-    icon: LineChart,
-  },
-  {
-    id: "data",
-    title: "Data Engineering",
-    description:
-      "Build robust data infrastructure that scales with your business needs using modern data engineering practices.",
-    points: [
-      "Data pipeline development",
-      "Big data processing",
-      "Data warehouse architecture",
-      "ETL workflow design",
-    ],
-    icon: Database,
-  },
-  {
-    id: "analytics",
-    title: "Predictive Analytics",
-    description:
-      "Transform your data into actionable insights with advanced predictive modeling and forecasting solutions.",
-    points: [
-      "Time series analysis",
-      "Predictive modeling",
-      "Business intelligence",
-      "Statistical analysis",
-    ],
-    icon: BarChart3,
-  },
-  {
-    id: "mlops",
-    title: "MLOps & Infrastructure",
-    description:
-      "Enterprise-grade infrastructure for deploying and managing ML models in production environments.",
-    points: [
-      "CI/CD pipeline setup",
-      "Model deployment automation",
-      "Performance monitoring",
-      "Infrastructure scaling",
-    ],
-    icon: ServerCog,
+    icon: Smartphone,
   },
 ];

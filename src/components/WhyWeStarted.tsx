@@ -5,22 +5,21 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@heroui/react";
 
-// Conteúdo dos slides
 const slides = [
   {
-    text: "We saw businesses drowning in data but struggling to make sense of it. Decisions were slow, teams were overwhelmed, and insights were buried.",
-    author: "John Doe",
+    text: "We saw businesses drowning in data and disjointed systems. SaaS, web, and mobile experiences were fragmented, slowing decisions and burying insights.",
+    author: "Jorge Simango",
     role: "Founder & CEO",
   },
   {
-    text: "That’s when we knew there had to be a better way — a smarter, faster, more intuitive solution.",
-    author: "John Doe",
-    role: "Founder & CEO",
+    text: "We envisioned a better path: unified SaaS platforms, robust web applications, and intuitive mobile apps working together—smarter, faster, and effortless.",
+    author: "Arnaldo simango",
+    role: "Cofounder",
   },
   {
-    text: "So we built a platform that empowers companies to transform raw data into real-time decisions using the power of AI.",
-    author: "John Doe",
-    role: "Founder & CEO",
+    text: "So we built integrated solutions that turn raw data into real-time decisions—SaaS in the cloud, web at scale, and mobile on the go.",
+    author: "Arcio Simango",
+    role: "CFO",
   },
 ];
 
@@ -45,7 +44,6 @@ export function WhyWeStarted() {
 
     itemWidthRef.current = firstItem.getBoundingClientRect().width;
 
-    // Função de animação
     const tick = (ts: number) => {
       if (isPausedRef.current) {
         lastTsRef.current = ts;
@@ -54,7 +52,7 @@ export function WhyWeStarted() {
       }
 
       if (lastTsRef.current != null) {
-        const dt = (ts - lastTsRef.current) / 1000; // segundos
+        const dt = (ts - lastTsRef.current) / 1000;
         const delta = speedPxPerSec * dt;
         offsetRef.current += delta;
       }

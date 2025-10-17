@@ -45,26 +45,26 @@ export const ServicesSection = () => {
       >
         <div className="grid max-w-6xl gap-10 md:grid-cols-3">
           <Card
-            title={"Predictive Analytics"}
-            src={"/img/service1.svg"}
+            title={"Saas"}
+            src={"/img/dollar.png"}
             description={
-              "Forecast trends and make data-driven decisions with our advanced ML models."
+              "Scalable cloud software streamlines operations, integrates tools, and surfaces real-time insights."
             }
           />
 
           <Card
-            title={"Predictive Analytics"}
-            src={"/img/service1.svg"}
+            title={"Web Development"}
+            src={"/img/computer.png"}
             description={
-              "Forecast trends and make data-driven decisions with our advanced ML models."
+              "Fast, accessible web experiences with robust backends, secure architectures, and effortless updates."
             }
           />
 
           <Card
-            title={"Predictive Analytics"}
-            src={"/img/service1.svg"}
+            title={"Mobile Development"}
+            src={"/img/mobile.png"}
             description={
-              "Forecast trends and make data-driven decisions with our advanced ML models."
+              "Polished native or cross-platform apps with intuitive UX, offline capabilities, and seamless integrations."
             }
           />
         </div>

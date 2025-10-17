@@ -6,22 +6,22 @@ const reasons = [
   {
     title: "Innovation",
     description:
-      "Pushing boundaries in AI, blockchain, and quantitative trading to deliver cutting-edge solutions.",
+      "Advancing AI and quantitative finance to create practical, scalable, transformative solutions worldwide.",
   },
   {
     title: "Collaboration",
     description:
-      "Working closely with clients to develop tailored solutions that drive measurable success.",
+      "Partnering closely with clients to co-create tailored strategies that achieve measurable success.",
   },
   {
     title: "Excellence",
     description:
-      "Maintaining the highest standards in code quality, system performance, and client outcomes.",
+      "Delivering uncompromising code quality, outstanding performance, and reliable outcomes every time, consistently.",
   },
   {
     title: "Integrity",
     description:
-      "Operating with transparency and ethical considerations at the forefront of all decisions.",
+      "Leading with transparency, ethics, and accountability in every decision and interaction, always.",
   },
 ];
 
@@ -56,7 +56,7 @@ export const WhyChooseUs = () => {
       </motion.h2>
 
       <div className="flex w-full items-center justify-center">
-        <div className="flex flex-wrap justify-center gap-10 md:gap-16">
+        <div className="flex flex-wrap justify-center gap-10 md:gap-16 md:ml-32 ">
           {reasons.map((item, index) => (
             <motion.div
               key={item.title}
@@ -73,7 +73,7 @@ export const WhyChooseUs = () => {
                   },
                 },
               }}
-              className="flex h-72 w-72 flex-col items-center justify-center rounded-full border-10 border-black bg-[#141414] p-10 text-center max-sm:-mt-24 md:-ml-28"
+              className="flex h-72 w-72 flex-col items-center justify-center rounded-full border-10 border-black bg-[#141414] p-10 text-center max-sm:-mt-24 md:-ml-24"
             >
               <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
               <p className="px-4 text-sm text-gray-300">{item.description}</p>

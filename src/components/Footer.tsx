@@ -5,11 +5,9 @@ import { ReactNode } from "react";
 import Image from "next/image";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Portfolio", href: "#" },
-  { label: "About Us", href: "#" },
-  { label: "Careers", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  // { label: "Portfolio", href: "#" },
 ];
 
 const SOCIAL_LINKS = [
@@ -24,8 +22,14 @@ export const Footer = () => {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-6">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
-            <Image alt="Logo" src="/logo.png" width={200} height={200} />
-            <p className="ml-2 font-bold ">ArcuTech</p>
+            <Image
+              alt="Logo"
+              src="/logo.png"
+              width={200}
+              height={200}
+              className="w-10 h-10"
+            />
+            <p className=" font-bold  text-white">ArcusTech</p>
           </div>
 
           <nav className="flex flex-wrap items-center gap-6 text-sm text-white/70">
@@ -60,30 +64,21 @@ export const Footer = () => {
           <div className="flex flex-col items-start gap-4 text-sm text-white/70 md:flex-row md:items-center md:gap-8">
             <ContactItem
               icon={<Mail className="h-4 w-4 text-primary" />}
-              label="contact@catalystanalytics.io"
+              label="admin@arcustech.co.mz"
             />
             <ContactItem
               icon={<Phone className="h-4 w-4 text-primary" />}
-              label="+1 (469) 712-4672"
+              label="+840604377"
             />
             <ContactItem
               icon={<MapPin className="h-4 w-4 text-primary" />}
-              label="5511 Parkcrest Dr, Suite 103, Austin, TX 78731"
+              label="AV,JULIUS NYERERE MIRADOURO, N5551"
             />
-          </div>
-
-          <div className="flex gap-6 text-sm text-white/60">
-            <a href="#" className="transition hover:text-primary">
-              Privacy Policy
-            </a>
-            <a href="#" className="transition hover:text-primary">
-              Terms of Service
-            </a>
           </div>
         </div>
 
         <p className="text-center text-xs text-white/40">
-          © 2025 Catalyst Analytics. All rights reserved.
+          © {new Date().getFullYear()} ArcusTech. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,4 +1,3 @@
-// NavbarComponent.tsx
 import React from "react";
 import {
   Navbar,
@@ -18,8 +17,7 @@ type NavLinkItem = {
 const centerLinks: NavLinkItem[] = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Portfolio", href: "/portfolio" },
-  { label: "About Us", href: "/about" },
+  // { label: "Portfolio", href: "/portfolio" },
 ];
 
 function isActive(href: string, currentPath?: string): boolean {

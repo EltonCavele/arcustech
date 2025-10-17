@@ -12,20 +12,19 @@ export const contactMethods: ContactMethod[] = [
   {
     id: "email",
     label: "Email",
-    value: "contact@catalystanalytics.io",
+    value: "admin@arcustech.co.mz",
     icon: Mail,
   },
   {
     id: "phone",
     label: "Phone",
-    value: "(469) 712-4672",
+    value: "+840604377",
     icon: Phone,
   },
   {
     id: "office",
     label: "Office",
-    value: "5511 Parkcrest Dr, Suite 103\nAustin, TX 78731\nUnited States",
+    value: "AV,JULIUS NYERERE MIRADOURO, N555",
     icon: MapPin,
   },
 ];
-
